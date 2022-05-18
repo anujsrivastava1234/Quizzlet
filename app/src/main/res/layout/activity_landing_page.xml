@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".landing_page">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/splashscreen_circle"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:id="@+id/quiz_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/quiz_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Topic"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_below="@+id/quiz_logo"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="20dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/text"
+        android:id="@+id/layout">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:id="@+id/java"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/java"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/php"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/php"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Java"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PHP"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/rust"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/rust"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/cpp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cpp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rust-Lang"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CPP"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_marginStart="20dp"
+         android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_color"
+        android:text="Start Quiz" />
+
+</RelativeLayout>
